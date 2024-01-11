@@ -1,0 +1,18 @@
+package com.wzcampus.cms.service;
+
+import com.wzcampus.cms.common.model.ext.RoleExt;
+
+import java.util.List;
+
+/**
+ * 业务逻辑接口 - 角色相关
+ * @author YuYan
+ * @date 2023-12-01 11:44:49
+ */
+public interface IRoleService {
+
+    RoleExt getById(Integer id);
+
+    List<RoleExt> list();
+
+}
