@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.wzcampus.cms.common.exception.CmsException;
 import com.wzcampus.cms.common.model.entity.User;
 import com.wzcampus.cms.common.model.ext.UserExt;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.UserMapper;
 import com.wzcampus.cms.service.IRoleService;
 import com.wzcampus.cms.service.IUserService;

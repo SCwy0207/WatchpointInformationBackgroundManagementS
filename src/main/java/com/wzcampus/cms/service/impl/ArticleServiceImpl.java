@@ -7,7 +7,7 @@ import com.wzcampus.cms.common.model.entity.Article;
 import com.wzcampus.cms.common.model.entity.Comment;
 import com.wzcampus.cms.common.model.ext.ArticleExt;
 import com.wzcampus.cms.common.model.ext.CommentExt;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.ArticleMapper;
 import com.wzcampus.cms.dao.CategoryMapper;
 import com.wzcampus.cms.dao.CommentMapper;

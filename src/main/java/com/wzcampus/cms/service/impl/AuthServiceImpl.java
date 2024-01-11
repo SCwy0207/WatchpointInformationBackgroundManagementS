@@ -2,7 +2,7 @@ package com.wzcampus.cms.service.impl;
 
 import com.wzcampus.cms.common.exception.CmsException;
 import com.wzcampus.cms.common.model.ext.UserExt;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.service.IAuthService;
 import com.wzcampus.cms.service.IUserService;
 import com.wzcampus.cms.common.util.*;

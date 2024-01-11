@@ -10,7 +10,7 @@ import com.wzcampus.cms.common.model.ext.CommentExt;
 import com.wzcampus.cms.common.model.ext.SubCommentExt;
 import com.wzcampus.cms.common.model.ext.UserExt;
 import com.wzcampus.cms.common.model.param.CommentDeleteParam;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.ArticleMapper;
 import com.wzcampus.cms.dao.CommentMapper;
 import com.wzcampus.cms.dao.SubCommentMapper;

@@ -11,7 +11,7 @@ import com.wzcampus.cms.common.model.entity.Category;
 import com.wzcampus.cms.common.model.excel.ExcelCategory;
 import com.wzcampus.cms.common.model.ext.CategoryExt;
 import com.wzcampus.cms.common.model.ext.UserExt;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.ArticleMapper;
 import com.wzcampus.cms.dao.CategoryMapper;
 import com.wzcampus.cms.service.ICategoryService;

@@ -6,7 +6,7 @@ import com.wzcampus.cms.common.cache.Cached;
 import com.wzcampus.cms.common.exception.CmsException;
 import com.wzcampus.cms.common.model.entity.Slideshow;
 import com.wzcampus.cms.common.model.ext.SlideshowExt;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.SlideshowMapper;
 import com.wzcampus.cms.service.ISlideshowService;
 import com.wzcampus.cms.common.util.*;

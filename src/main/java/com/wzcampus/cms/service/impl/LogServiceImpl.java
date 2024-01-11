@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.wzcampus.cms.common.model.entity.LogEntity;
 import com.wzcampus.cms.common.model.excel.ExcelLogEntity;
 import com.wzcampus.cms.common.model.ext.LogEntityExt;
-import com.briup.cms.common.util.*;
+import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.LogMapper;
 import com.wzcampus.cms.service.ILogService;
 import com.wzcampus.cms.common.util.ExcelUtil;
