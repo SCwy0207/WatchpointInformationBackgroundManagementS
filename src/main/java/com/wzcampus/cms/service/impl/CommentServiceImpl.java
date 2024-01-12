@@ -14,9 +14,8 @@ import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.ArticleMapper;
 import com.wzcampus.cms.dao.CommentMapper;
 import com.wzcampus.cms.dao.SubCommentMapper;
-import com.wzcampus.cms.service.ICommentService;
-import com.wzcampus.cms.service.IUserService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.service.CommentService;
+import com.wzcampus.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,7 +29,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class CommentServiceImpl implements ICommentService, BaseServiceInter {
+public class CommentServiceImpl implements CommentService, BaseServiceInter {
 
     /**
      * 一级评论模块Dao层对象
@@ -45,7 +44,7 @@ public class CommentServiceImpl implements ICommentService, BaseServiceInter {
      */
     private final ArticleMapper articleMapper;
 
-    private final IUserService userService;
+    private final UserService userService;
 
     @Override
     public void save(CommentExt commentExt) {

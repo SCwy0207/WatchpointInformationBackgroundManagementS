@@ -4,7 +4,7 @@ import com.wzcampus.cms.common.model.entity.LogEntity;
 import com.wzcampus.cms.common.util.JsonUtil;
 import com.wzcampus.cms.common.util.ObjectUtil;
 import com.wzcampus.cms.common.util.RequestInfoHolder;
-import com.wzcampus.cms.service.ILogService;
+import com.wzcampus.cms.service.LogService;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -27,7 +27,7 @@ import java.util.Date;
 public class LogAspect {
 
 
-    private final ILogService logService;
+    private final LogService logService;
 
     private final JsonUtil jsonUtil;
 

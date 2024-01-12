@@ -3,7 +3,7 @@ package com.wzcampus.cms.web.controller;
 import com.wzcampus.cms.common.model.vo.UserVO;
 import com.wzcampus.cms.common.util.GlobalConstants;
 import com.wzcampus.cms.common.util.Result;
-import com.wzcampus.cms.service.IAuthService;
+import com.wzcampus.cms.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final IAuthService authService;
+    private final AuthService authService;
 
     /**
      * 用户登录

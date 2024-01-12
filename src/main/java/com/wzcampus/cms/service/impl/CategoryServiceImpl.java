@@ -14,9 +14,8 @@ import com.wzcampus.cms.common.model.ext.UserExt;
 import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.ArticleMapper;
 import com.wzcampus.cms.dao.CategoryMapper;
-import com.wzcampus.cms.service.ICategoryService;
-import com.wzcampus.cms.service.IUserService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.service.CategoryService;
+import com.wzcampus.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
@@ -36,13 +35,13 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 @CacheEntity(entityTypes = Category.class)
-public class CategoryServiceImpl implements ICategoryService, BaseServiceInter {
+public class CategoryServiceImpl implements CategoryService, BaseServiceInter {
 
     private final CategoryMapper categoryMapper;
 
     private final ArticleMapper articleMapper;
 
-    private final IUserService userService;
+    private final UserService userService;
 
     private final ExcelUtil excelUtil;
 

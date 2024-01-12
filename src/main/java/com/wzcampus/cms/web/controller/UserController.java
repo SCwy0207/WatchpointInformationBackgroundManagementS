@@ -8,7 +8,7 @@ import com.wzcampus.cms.common.model.ext.UserExt;
 import com.wzcampus.cms.common.model.vo.UserVO;
 import com.wzcampus.cms.common.util.PageUtil;
 import com.wzcampus.cms.common.util.Result;
-import com.wzcampus.cms.service.IUserService;
+import com.wzcampus.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +24,7 @@ import java.util.List;
 @RequestMapping("/auth/user")
 public class UserController {
 
-    private final IUserService userService;
+    private final UserService userService;
 
     /**
      * 新增用户信息

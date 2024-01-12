@@ -7,9 +7,8 @@ import com.wzcampus.cms.common.model.entity.User;
 import com.wzcampus.cms.common.model.ext.UserExt;
 import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.UserMapper;
-import com.wzcampus.cms.service.IRoleService;
-import com.wzcampus.cms.service.IUserService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.service.RoleService;
+import com.wzcampus.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +21,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements IUserService, BaseServiceInter {
+public class UserServiceImpl implements UserService, BaseServiceInter {
 
     /**
      * 用户模块Dao层对象
@@ -31,7 +30,7 @@ public class UserServiceImpl implements IUserService, BaseServiceInter {
     /**
      * 角色模块Service层对象
      */
-    private final IRoleService roleService;
+    private final RoleService roleService;
     /**
      * 加密工具
      */

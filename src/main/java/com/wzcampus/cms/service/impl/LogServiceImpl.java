@@ -5,9 +5,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.wzcampus.cms.common.model.entity.LogEntity;
 import com.wzcampus.cms.common.model.excel.ExcelLogEntity;
 import com.wzcampus.cms.common.model.ext.LogEntityExt;
-import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.LogMapper;
-import com.wzcampus.cms.service.ILogService;
+import com.wzcampus.cms.service.LogService;
 import com.wzcampus.cms.common.util.ExcelUtil;
 import com.wzcampus.cms.common.util.JsonUtil;
 import com.wzcampus.cms.common.util.ObjectUtil;
@@ -29,7 +28,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
-public class LogServiceImpl implements ILogService {
+public class LogServiceImpl implements LogService {
 
     private final LogMapper logMapper;
 

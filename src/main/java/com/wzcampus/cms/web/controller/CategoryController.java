@@ -9,8 +9,7 @@ import com.wzcampus.cms.common.model.entity.Category;
 import com.wzcampus.cms.common.model.ext.CategoryExt;
 import com.wzcampus.cms.common.model.vo.CategoryVO;
 import com.wzcampus.cms.common.util.*;
-import com.wzcampus.cms.service.ICategoryService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -30,7 +29,7 @@ import java.util.List;
 @RequestMapping("/auth/category")
 public class CategoryController {
 
-    private final ICategoryService categoryService;
+    private final CategoryService categoryService;
 
     /**
      * 新增栏目

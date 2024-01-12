@@ -2,7 +2,7 @@ package com.wzcampus.cms.service.impl;
 
 import com.wzcampus.cms.common.model.ext.RoleExt;
 import com.wzcampus.cms.dao.RoleMapper;
-import com.wzcampus.cms.service.IRoleService;
+import com.wzcampus.cms.service.RoleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
-public class RoleServiceImpl implements IRoleService {
+public class RoleServiceImpl implements RoleService {
 
     private final RoleMapper roleMapper;
 

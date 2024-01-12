@@ -11,9 +11,8 @@ import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.ArticleMapper;
 import com.wzcampus.cms.dao.CategoryMapper;
 import com.wzcampus.cms.dao.CommentMapper;
-import com.wzcampus.cms.service.IArticleService;
-import com.wzcampus.cms.service.IUserService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.service.ArticleService;
+import com.wzcampus.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +25,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class ArticleServiceImpl implements IArticleService, BaseServiceInter {
+public class ArticleServiceImpl implements ArticleService, BaseServiceInter {
 
     /**
      * 文章模块Dao层对象
@@ -43,7 +42,7 @@ public class ArticleServiceImpl implements IArticleService, BaseServiceInter {
     /**
      * 用户模块Service层对象
      */
-    private final IUserService userService;
+    private final UserService userService;
 
 
     @Override

@@ -8,8 +8,7 @@ import com.wzcampus.cms.common.model.entity.Slideshow;
 import com.wzcampus.cms.common.model.ext.SlideshowExt;
 import com.wzcampus.cms.common.util.*;
 import com.wzcampus.cms.dao.SlideshowMapper;
-import com.wzcampus.cms.service.ISlideshowService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.service.SlideshowService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +21,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class SlideshowServiceImpl implements ISlideshowService, BaseServiceInter {
+public class SlideshowServiceImpl implements SlideshowService, BaseServiceInter {
 
     private final SlideshowMapper slideshowMapper;
 

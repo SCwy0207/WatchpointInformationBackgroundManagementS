@@ -1,7 +1,7 @@
 package com.wzcampus.cms.web.controller;
 
 import com.wzcampus.cms.common.util.Result;
-import com.wzcampus.cms.service.IUploadService;
+import com.wzcampus.cms.service.UploadService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequiredArgsConstructor
 public class UploadController {
 
-    private final IUploadService uploadService;
+    private final UploadService uploadService;
 
     /**
      * 上传头像

@@ -3,9 +3,9 @@ package com.wzcampus.cms.service.impl;
 import com.wzcampus.cms.common.exception.CmsException;
 import com.wzcampus.cms.common.model.ext.UserExt;
 import com.wzcampus.cms.common.util.*;
-import com.wzcampus.cms.service.IAuthService;
-import com.wzcampus.cms.service.IUserService;
-import com.wzcampus.cms.common.util.*;
+import com.wzcampus.cms.dao.UserMapper;
+import com.wzcampus.cms.service.AuthService;
+import com.wzcampus.cms.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,17 +13,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author YuYan
+ * @author SCwy0207
  * @date 2023-12-01 14:23:58
  */
 @Service
 @RequiredArgsConstructor
-public class AuthServiceImpl implements IAuthService {
+public class AuthServiceImpl implements AuthService {
+
+    private final UserMapper userMapper;
 
     /**
      * 用户模块Service层对象
      */
-    private final IUserService userService;
+    private final UserService userService;
     /**
      * 加密工具
      */

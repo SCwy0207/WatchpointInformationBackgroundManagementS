@@ -13,7 +13,7 @@ import java.util.List;
  * @author YuYan
  * @date 2023-12-04 11:22:42
  */
-public interface ICategoryService {
+public interface CategoryService {
 
     /**
      * 新增栏目信息
